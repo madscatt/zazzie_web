@@ -1,0 +1,38 @@
+{
+   "hostname" : "onsager.ncnr.nist.gov",
+   "resourcedefault" : "local",
+   "resources" : {
+      "local" : ""
+      ,"compute0" : "ssh compute-0-0"
+      ,"compute1" : "ssh compute-0-1"
+   },
+   "lockdir" : "/share/apps/genapp/etc",
+   "submitpolicy" : "login",
+   "hostip" : "129.6.121.86",
+   "messaging" : {
+      "udpport" : 37779,
+      "tcpport" : 37780,
+      "zmqport" : 37778,
+      "wsport" : 37777,
+      "tcphostip" : "127.0.0.1",
+      "udphostip" : "127.0.0.1",
+      "wssport" : 80,
+      "zmqhostip" : "127.0.0.1"
+   },
+   "mail"     : {
+                "admin"    : "curtis.family@mac.com"
+                ,"feedback" : "curtis.family@mac.com"
+                ,"from"     : "sassie-web.ncnr.nist.gov"
+               }
+  ,"feedbackmail" : "curtis.family@mac.com"
+  ,"restricted" : {
+      "admin"      : [ "joseph" ]
+      ,"alpha"      : [ "joseph","skrueger","jas14","castellanosm"]
+                  }
+  ,"groups" : {
+        "beta" : { "label" : "Beta", "userconfig" : 1, "help" : "Check to enable the Beta testing menu" }
+        ,"graveyard" : { "label" : "Retired", "userconfig" : 1, "help" : "Check to enable the Graveyard menu" }
+    }
+  ,"resourcedefault" : "local"
+  ,"submitpolicy"    : "login"
+}
